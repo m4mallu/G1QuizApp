@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/creditsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:linksClickable="true"
+        android:text="G1 Quiz by - Renjith Rajan\n\nVisit - M4mallu@GitHub\n"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorLink="#1E88E5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- This new layout will hold the buttons in a row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Existing Start Quiz Button -->
+        <Button
+            android:id="@+id/startQuizBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Start Quiz"
+            android:textSize="16sp" />
+
+        <!-- New Close App Button -->
+        <Button
+            android:id="@+id/closeAppBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Close App"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
