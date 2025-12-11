@@ -11,13 +11,18 @@ A simple and straightforward Android quiz application designed to help users pre
 -   **Simple Navigation:** Easily start the quiz and move through questions.
 -   **Clean UI:** A minimal and focused user interface to avoid distractions.
 
+
 ---
 
 ## 📥 Download
 
-You can download the latest version of the app directly from the link below.
+Click the button below to download the latest APK directly.
 
-👉 **[Download G1QuizApp.apk](https://github.com/m4mallu/G1QuizApp/raw/main/G1QuizApp.apk)**
+<a href="https://github.com/m4mallu/G1QuizApp/raw/master/G1QuizApp.apk">
+  <img src="https://img.shields.io/badge/Download-APK-brightgreen.svg" alt="Download APK">
+</a>
+
+<br>
 
 **Note:** You will need to enable "Install from unknown sources" in your Android settings to install the APK directly.
 
