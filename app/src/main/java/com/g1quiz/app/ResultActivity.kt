@@ -26,11 +26,10 @@ class ResultActivity : AppCompatActivity() {
         restartBtn.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
-            finish() // Close the ResultActivity
+            finish()
         }
 
         closeBtn.setOnClickListener {
-            // Close the app completely
             finishAffinity()
         }
     }

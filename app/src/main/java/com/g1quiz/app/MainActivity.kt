@@ -14,16 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // --- Find Buttons ---
         val startBtn = findViewById<Button>(R.id.startQuizBtn)
         val closeBtn = findViewById<Button>(R.id.closeAppBtn) // Find the new button
 
-        // --- Set Click Listeners ---
         startBtn.setOnClickListener {
             startActivity(Intent(this, QuizActivity::class.java))
         }
 
-        // Add logic for the new Close App button
         closeBtn.setOnClickListener {
             finishAffinity() // This command closes the entire application
         }
@@ -40,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         val start = fullText.indexOf(linkText)
         val end = start + linkText.length
 
-        if (start != -1) { // Make sure the text was found
+        if (start != -1) {
             spannableString.setSpan(URLSpan(url), start, end, SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE)
             creditsText.text = spannableString
         }

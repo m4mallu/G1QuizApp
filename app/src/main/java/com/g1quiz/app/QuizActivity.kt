@@ -81,7 +81,6 @@ class QuizActivity : AppCompatActivity() {
             questionImage.visibility = ImageView.GONE
         }
 
-        // Reverted to the simple loop
         for (i in optionButtons.indices) {
             optionButtons[i].text = q.options[i]
             optionButtons[i].isEnabled = true
@@ -126,6 +125,6 @@ class QuizActivity : AppCompatActivity() {
         intent.putExtra("score", score)
         intent.putExtra("total", questions.size)
         startActivity(intent)
-        finish() // Finish this activity so the user can't go back to it
+        finish()
     }
 }
